@@ -25,9 +25,7 @@ class Solution {
         
         if (startIdx == -1) {
             answer = new int[] {-1};
-        } else if (startIdx == endIdx) {
-            answer = new int[] {arr[startIdx]};
-        } else if (startIdx != endIdx) {
+        } else {
             answer = Arrays.copyOfRange(arr, startIdx, endIdx + 1);
         }
         
